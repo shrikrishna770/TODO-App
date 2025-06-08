@@ -10,9 +10,9 @@ const App = () => {
 
 
   const createTask = () => {
-    let text = text.charAt(0).toUpperCase()+text.slice(1).toLowerCase()
-    if (text) {
-      setTasks([text, ...tasks])
+    let list = text.charAt(0).toUpperCase()+text.slice(1).toLowerCase()
+    if (list) {
+      setTasks([list, ...tasks])
       setText("")
     }
   }
