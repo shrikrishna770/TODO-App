@@ -5,7 +5,7 @@ import { useState } from "react";
 const App = () => {
 
   const [text, setText] = useState("")
-  const [tasks, setTasks] = useState(["helo", "gol", "ram"])
+  const [tasks, setTasks] = useState([])
   const [complete, setComplete] = useState({})
 
 
