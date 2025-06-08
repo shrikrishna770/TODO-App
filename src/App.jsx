@@ -73,7 +73,7 @@ const App = () => {
             <li key={index} className="flex items-center justify-between gap-2 bg-gray-100 px-3 py-2 rounded mb-2">
               <div className="flex items-center gap-3">
                 <input type="checkbox" className="scale-125 accent-amber-600" onChange={() => { taskDone(index) }}/>
-                <p className={`text-gray-800 ${complete[index]? "line-through" : "no-underline"}`} >{list}</p>
+                <p className={`text-gray-800 font-bold ${complete[index]? "line-through  text-red-300" : "no-underline"}`} >{list}</p>
               </div>
               <div className="flex gap-2">
                 <button className="text-blue-600 hover:underline cursor-pointer" onClick={() => taskChange(list, index)}>Edit</button>
