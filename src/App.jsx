@@ -11,10 +11,17 @@ const App = () => {
 
   const createTask = () => {
     let list = text.charAt(0).toUpperCase()+text.slice(1).toLowerCase()
-    if (list) {
+    let duplicate = tasks.includes(list)
+
+    if (duplicate) {
+      alert("You have alredy has add task")
+    }else if(list) {
       setTasks([list, ...tasks])
       setText("")
+    }else{
+      alert("Please write your task")
     }
+    console.log(duplicate)
   }
 
   const clearTask = () => {
