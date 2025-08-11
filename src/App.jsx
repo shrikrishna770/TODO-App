@@ -21,7 +21,6 @@ const App = () => {
     }else{
       alert("Please write your task")
     }
-    console.log(duplicate)
   }
 
   const clearTask = () => {
